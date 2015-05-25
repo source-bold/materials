@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "dependencies": {
     "bower": "~1.4.1",
-    "grunt": "~0.4.5"
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13"
   },
   "repository": {},
   "devDependencies": {
@@ -39,7 +40,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "prestart": "bower install",
-    "start": "./node_modules/grunt/grunt serve:dist"
+    "start": "node server.js",
+    "postinstall": "bower install; grunt serve:dist"
   }
 }
