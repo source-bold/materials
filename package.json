@@ -40,7 +40,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "bower install; grunt serve:dist"
+    "start": " grunt serve:dist",
+    "postinstall": "bower install"
   }
 }
