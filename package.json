@@ -36,6 +36,9 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "prestart": "./node_modules/bower/bin/bower install;",
+    "start": "./node_modules/grunt-cli/bin/grunt serve:deploy",
+    "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
   }
 }
